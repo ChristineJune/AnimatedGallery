@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+</head>
+<body>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        body{
+            margin: 0;
+        }
+        .row{
+            padding:50px;
+        }
+
+        .col1{
+            width:25%;
+            padding: 10px 10px 20px 10px;
+            border:2px solid black;
+            background-color: #A0C3D2;
+            box-shadow: 10px 10px 5px (gray);
+            float:left;
+            -ms-transform: rotate(7deg);
+            -webkit-transform: rotate(7deg);
+            transform: rotate(7deg);
+        }
+        .col1 span{
+            font-weight:bold;
+            font-size:25px;
+        }
+        .col1:hover{
+            transform:rotate(0deg);
+        }
+
+        .col2{
+            width:25%;
+            padding: 10px 10px 20px 10px;
+            border:2px solid black;
+            background-color: #A0C3D2;
+            box-shadow: 10px 10px 5px (gray);
+            float:left;
+            -ms-transform: rotate(-8deg);
+            -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+        }
+        .col2 span{
+            font-weight: bold;
+            font-size:25px;
+        }
+        .col2:hover{
+            transform:rotate(0deg);
+        }
+
+        .row::after{
+            content:" ";
+            display: table;
+            clear: both;
+        }
+        @media screen and (max-width:600px){
+            .col1{
+                width: 100%;
+            }
+            .col2{
+                width: 100%;
+            }
+        }
+    </style>
+    <div class="row">
+
+        <div class="col1">
+            <img src="img/given.jpg" width="100%">
+            <span>Given</span>
+            <p class="desc1">Tightly clutching his Gibson guitar, Mafuyu Satou steps out of his dark apartment to begin another day of his high
+                school life. While taking a nap in a quiet spot on the gymnasium staircase, he has a chance encounter with fellow student Ritsuka 
+                Uenoyama, who berates him for letting his guitar's strings rust and break. Noticing Uenoyama's knowledge of the instrument, Satou 
+                pleads for him to fix it and to teach him how to play. Uenoyama eventually agrees and invites him to sit in on a jam session with 
+                his two band mates: bassist Haruki Nakayama and drummer Akihiko Kaji.</p>
+        </div>
+        <div class="col2">
+            <img src="img/sasaki.jpg" width="100%">
+            <span>Sasaki to Miyano</span>
+            <p class="desc1">Yoshikazu Miyano's troubles first start one hot summer day when Shuumei Sasaki steps into his life. Sasaki saves 
+                Miyano's classmate from a group of bullies, and after that, Miyano cannot seem to shake off his eccentric upperclassman. His silent 
+                admiration for Sasaki gradually sours into annoyance each time the so-called delinquent refuses to leave him alone. Constantly being
+                called by cute nicknames and having his boundaries ignored, Miyano wonders why Sasaki wants to get close to him.</p>
+        </div>
+
+        <!-- -->
+        <div class="col1">
+            <img src="img/haikyuu.jpg" width="100%">
+            <span>Haikyuu!!</span>
+            <p class="desc1">Ever since having witnessed the "Little Giant" and his astonishing skills on the volleyball court, Shouyou Hinata has 
+                been bewitched by the dynamic nature of the sport. Even though his attempt to make his debut as a volleyball regular during a middle 
+                school tournament went up in flames, he longs to prove that his less-than-impressive height ceases to be a hindrance in the face of 
+                his sheer will and perseverance.</p>
+        </div>
+        <div class="col2">
+            <img src="img/yurionice.jpg" width="100%">
+            <span>Yuri!! On Ice</span>
+            <p class="desc1">Reeling from his crushing defeat at the Grand Prix Finale, Yuuri Katsuki, once Japan's most promising figure skater, 
+                returns to his family home to assess his options for the future. At age 23, Yuuri's window for success in skating is closing rapidly, 
+                and his love of pork cutlets and aptitude for gaining weight are not helping either.</p>
+        </div>
+
+    </div>
+    
+</body>
+</html>
